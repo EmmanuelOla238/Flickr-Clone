@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header id="header">
+    <div><a href="https://www.flickr.com/"><img src="Image/svgexport-2 (1).svg" alt="" id="headerlogo"></a></div>
+    <div id="inputDiv">
+    <input type="text" placeholder=" Photos, people and groups" id="input">
+    <img src="Image/svgexport-4.svg" alt="" id="inpImg">
+    </div>
+    <div id="inputSCdiv">
+      <input type="text" placeholder=" Photos, people and groups" id="inputSC">
+      <div id="icon"  onclick="toggleInput()">
+      <img src="Image/svgexport-3.svg" alt="" id="searchIcon">
+      </div>
+    </div>
+    <div class="d-flex">
+      <a href="signin.html" id="headerlogin">Log In</a>
+      <a href="signup.html"><button class="me-5" id="headerButton">Sign Up</button></a>
+    </div>
+  </header>
+  <section id="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="Image/Catwalk_am_Bahnhof_Zurich_Oerlikon_Peter_Arn.jpg" class="d-block w-100" alt="..."
+            id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Cool_Power_commended-LPOTY_UK_Steve_Cole.jpg" class="d-block w-100" alt="..."
+            id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Desert_Beauty_Christoph_Fischer.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Dawn_of_Another_Day_Sky_Matthews.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/four.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Frosch_Bokeh_2_Axel_F.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/If_Only_We_Could_Turn_Back_Time_Anna_Kwa.jpg" class="d-block w-100" alt="..."
+            id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Mists_of_renfrew_Adam_Gibbs.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/one.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Secluded_Pete_Rowbottom.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/sunset_1663_Junji_Aoyama.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/three.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Tree_and_Morning_Mist_Jos_Buurmans.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/two.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br><br>
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Image/Untitled_Jorge_Guadalupe_Lizarraga.jpg" class="d-block w-100" alt="..." id="carouselImage">
+          <div class="carousel-caption d-md-block">
+            <p id="carouselText1">Find your inspiration.</p>
+            <p id="carouselText2">Join the Flickr community, home to tens of billions of photos and 2 million groups.
+            </p><br id="lineRm"><br id="lineRm">
+            <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br>
+            <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+            <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="textDiv">
+      <h1 id="firstText">Find your inspiration.</h1><br>
+      <div><a href="signup.html" id="startFor">Start for free</a></div><br><br><br><br><br><br><br><br>
+      <div id="mistDiv">
+        <a href="" style="text-decoration: none; color: white;">Mists of Renfrew</a><br>
+        <a href="" style="text-decoration: none; color: white;">by Daniel Cheong</a>
+      </div>  
+    </div> -->
+  </section>
+  <section id="footer">
+    <a href="https://www.flickr.com/about" id="footerLinks">About</a><a href="https://www.flickr.com/jobs"
+      id="footerLinks">Jobs</a><a href="https://blog.flickr.net/en" id="footerLinks">Blog</a><a
+      href="https://www.flickrads.com/?utm_source=flickr&utm_campaign=footer" id="footerLinks">Advertise</a><a
+      href="https://www.flickr.com/services/developer" id="footerLinks">Developers</a><a
+      href="https://www.flickr.com/help/guidelines" id="footerLinks">Guidelines</a><a href="https://flickrhelp.com/"
+      id="footerLinks">Help</a><a href="https://www.flickr.com/help/forum" id="footerLinks">Help forum</a><a
+      href="https://www.flickr.com/help/privacy" id="footerLinks">Privacy</a><a href="https://www.flickr.com/help/terms"
+      id="footerLinks">Terms</a><a href="https://www.flickr.com/help/cookies" id="footerLinks">Cookies</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">English <span class="dropdown-icon">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="https://www.flickr.com/change_language.gne?lang=zh-hk&csrf=">繁體中文</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=de-de&csrf=">Deutsch</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=es-us&csrf=">Español</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=fr-fr&csrf=">Français</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=ko-kr&csrf=">한글</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=it-it&csrf=">Italiano</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=pt-br&csrf=">Português</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=vn-vn&csrf=">Tiếng Việt</a>
+          <a href="https://www.flickr.com/change_language.gne?lang=id-id&csrf=">Bahasa Indonesia</a>
+        </div>
+      </div>
+      <a href="https://www.smugmug.com/" id="footerLinks" class="footerLinkseperate">SmugMug+Flickr.</a>
+      <p class="SmFootertext">Connecting people through photography</p>
+      <div id="footerIconDiv">
+        <a href="https://www.facebook.com/flickr" ><img src="Image/svgexport-7.svg" alt="" id="footerIcon"></a>
+        <a href="https://twitter.com/flickr"><img src="Image/svgexport-8.svg" alt="" id="footerIcon"></a>
+        <a href="https://www.instagram.com/flickr/"><img src="Image/svgexport-9.svg" alt="" id="footerIcon"></a>
+      </div>
+  </section>
+  
+
+
+  <script src="jseffect.js"></script>
+  <script src="bootstrap.js"></script>
+</body>
+
+</html>

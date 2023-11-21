@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<style>
+    header {
+        width: 100%;
+        background-color: black;
+        padding: 0.8em;
+        z-index: 3;
+        position: fixed;
+    }
+
+    #SigninHeaderImg {
+        width: 8%;
+        height: 9%;
+        margin-left: 9%;
+    }
+
+    #backgroundImg {
+        margin-top: 1em;
+        width: 100%;
+        height: 110vh;
+    }
+
+    #formSection {
+        width: 22rem;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 1em;
+        z-index: 2;
+    }
+
+    #floatingInput {
+        border: 0.000001px rgba(0, 0, 0, 0.473) solid;
+    }
+
+    #button {
+        width: 100%;
+        background-color: #128fdc;
+        border: none;
+    }
+
+    #button:hover {
+        background-color: #309cdf;
+    }
+
+    #termLinks {
+        text-decoration: none;
+    }
+
+    #agreement {
+        font-size: 0.7em;
+        text-align: center;
+        width: 80%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 9%;
+    }
+    .dropdown2 {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.dropbtn2 {
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding-top: 1em;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 100%;
+    border-radius: 3px;
+    padding: 9px 0;
+}
+
+.dropdown-content2 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 2px;
+    padding-left: 10px;
+}
+
+#links{
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    margin-right: 1.1em;
+    /* padding-top: 3em; */
+}
+#linkDiv{
+    padding-top: 0.7em;
+    margin-left: 6.6em;
+}
+#allSection{
+    position: absolute;
+    top: 7.6%;
+    left: 37%;
+}
+#formHeader{
+    font-size: 1.2em;
+    margin-left: 28%;
+}
+#secondImg{
+       display: none;
+}
+@media screen and (max-width:478px) {
+    #backgroundImg{
+        display: none;
+    }
+    #allSection{
+        position: static;
+        margin-left: 4%;
+    }
+    header {
+        width: 100%;
+        background-color: black;
+        padding: 0.8em;
+        position: sticky;
+        top: 0;
+    }
+
+    #SigninHeaderImg {
+        width: 25%;
+        height: 12%;
+        margin-left: 2%;
+    }
+}
+</style>
+
+<body>
+    <header>
+        <a href="https://www.flickr.com/"><img src="Image/svgexport-2 (1).svg" alt="" id="SigninHeaderImg"></a>
+    </header>
+    <div>
+        <img src="Image/033120190455-by-Henry.2edde7a9.jpg" alt="" id="backgroundImg">
+    </div>
+    <section id="allSection">
+        <div id="formSection">
+            <img src="Image/second dot.png" alt="" id="secondImg">
+            <p id="formHeader">Sign up for Flickr</p>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">First name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Password">
+                <label for="floatingPassword">Last name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Your age</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Password</label>
+            </div>
+            <button class="form-control text-light pt-2 pb-2 " id="button"><b>Next</b></button>
+            <p id="agreement">By signing up, you agree with Flickr's <a href="https://www.flickr.com/help/terms"
+                    id="termLinks">Terms of Services</a> and <a href="https://www.flickr.com/help/privacy"
+                    id="termLinks">Privacy Policy.</a></p>
+            <hr>
+            <p style="font-size: 0.8em; margin-left: 15%;">Already a Flickr member? <a
+                    href="signin.html" id="termLinks">Log in here.</a></p>
+        </div>
+        <section class="d-flex">
+            <div class="dropdown2">
+                <button class="dropbtn2" onclick="toggleDropdown()">English <span class="dropdown-icon2">&#9660;</span></button>
+                <div class="dropdown-content2">
+                  <a href="https://www.flickr.com/change_language.gne?lang=zh-hk&csrf=">繁體中文</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=de-de&csrf=">Deutsch</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=es-us&csrf=">Español</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=fr-fr&csrf=">Français</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=ko-kr&csrf=">한글</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=it-it&csrf=">Italiano</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=pt-br&csrf=">Português</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=vn-vn&csrf=">Tiếng Việt</a>
+                  <a href="https://www.flickr.com/change_language.gne?lang=id-id&csrf=">Bahasa Indonesia</a>
+                </div>
+            </div>
+            <div id="linkDiv">
+                <a href="https://www.flickr.com/help" id="links">Help</a><a href="https://www.flickr.com/help/privacy" id="links">Privacy</a><a href="https://www.flickr.com/help/terms" id="links">Terms</a>
+            </div>
+        </section>
+    </section>
+
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 0.9em 0em;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+#headerlogin{
+    color: white; 
+    margin-top: 4px; 
+    margin-right: 14px; 
+    text-decoration: none;
+}
+
+#searchIcon{
+    cursor: pointer;
+}
+
+#inputDiv{
+    width: 60%;
+    display: flex;
+    opacity: 0.7;
+}
+
+#inpImg{
+    width: 5%;
+    height: 32px;
+    background-color: whitesmoke;
+    padding: 6px 11px;
+    border-radius: 0.2em;
+    transform: translateX(-50.8em);
+}
+
+#inputSCdiv{
+    display: none;
+}
+
+#inputSC{
+    width: 97%;
+    height: 2em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: whitesmoke;
+}
+
+#input{
+    width: 97%;
+    height: 2em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: whitesmoke;
+    /* opacity: 0.8;                                           */
+}
+
+#input::placeholder{
+    font-size: 0.8em;
+}
+
+#headerButton{
+    border: none;
+    border-radius: 0.3em;
+    width: 5.8em;
+    height: 2em;
+    font-weight: 500;
+}
+
+#headerButton:hover{
+    color: #696969;
+}
+
+#carouselImage{
+    height: 92vh;
+}
+
+#headerlogo{
+    width: 5.8em;
+    height: 1.4em;
+    margin-left: 2em;
+    margin-top: 2px;
+    margin-right: 5em;
+}
+
+#carouselText1{
+    font-size: 3.4em;
+    font-weight: 600;
+}
+
+#carouselText2{
+    font-size: 1.8em;
+    text-align: center;
+    width: 70%;
+    margin-left: 5em;
+    font-weight: 500;
+}
+
+#textDiv{
+    display: none;
+}
+
+#startFor{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 1.5em;
+    padding: 0.7em 1em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#startFor:hover{
+    color: #696969;
+}
+
+#carousel{
+    z-index: 1;
+    /* position: relative; */
+}
+
+#footer{
+    background-color: #000000;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#footerLinks{
+    text-decoration: none;
+    color: #979797;
+    font-size: 0.85em;
+    font-weight: 500;
+    padding-top: 1em;
+}
+
+.SmFootertext{
+    color: #979797;
+    font-size: 0.85em;
+    display: none;
+}
+
+#footerLinks:hover{
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px;
+    color: #979797;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding-top: 1em;
+}
+
+.dropbtn:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 100%;
+    border-radius: 3px;
+    padding: 9px 0;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 2px;
+    padding-left: 10px;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(196, 196, 196)
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+#footerIcon{
+    opacity: 0.7;
+    padding-top: 0.8em;
+    margin-right: 2em;
+}
+
+#footerIcon:hover{
+    opacity: 1;
+}
+
+#mistDiv{
+    position: absolute;
+    left: 20em;
+    z-index: 100;
+}
+#textDiv{
+    z-index: 100;
+}
