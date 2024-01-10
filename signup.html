@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Find your inspiration. | Flickr</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <style>
@@ -22,10 +22,12 @@
         margin-left: 9%;
     }
 
-    #backgroundImg {
-        margin-top: 1em;
-        width: 100%;
-        height: 110vh;
+    body{
+    background: url(Image/033120190455-by-Henry.2edde7a9.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    background-attachment: fixed;
     }
 
     #formSection {
@@ -69,7 +71,12 @@
     z-index: 3;
 }
 
-.dropbtn2 {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
     padding: 10px;
     color: white;
     font-size: 0.9em;
@@ -79,7 +86,11 @@
     padding-top: 1em;
 }
 
-.dropdown-content2 {
+.dropbtn:hover {
+    color: white;
+}
+
+#dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -91,13 +102,22 @@
     padding: 9px 0;
 }
 
-.dropdown-content2 a {
+#dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
     font-size: 0.9em;
     margin-top: 2px;
     padding-left: 10px;
+}
+
+#dropdown-content a:hover{
+    background-color: rgb(196, 196, 196)
+}
+
+#icon{
+    margin-left: 5px;
+    font-size: 12px;
 }
 
 #links{
@@ -112,16 +132,16 @@
     margin-left: 6.6em;
 }
 #allSection{
-    position: absolute;
-    top: 7.6%;
-    left: 37%;
+    margin-left: 75vh;
+    padding-top: 7vh;
 }
 #formHeader{
     font-size: 1.2em;
     margin-left: 28%;
 }
 #secondImg{
-       display: none;
+    margin-left: 45%;
+    display: none;
 }
 @media screen and (max-width:478px) {
     #backgroundImg{
@@ -158,6 +178,16 @@
     #links{
         color: black;
     }
+    body{
+        background: none;
+    }
+    #allSection{
+        margin-left: 0;
+        padding-top: 0;
+    }
+    #secondImg{
+        display: block;
+    }
 }
 </style>
 
@@ -165,15 +195,12 @@
     <header>
         <a href="https://www.flickr.com/"><img src="Image/svgexport-2 (1).svg" alt="" id="SigninHeaderImg"></a>
     </header>
-    <div>
-        <img src="Image/033120190455-by-Henry.2edde7a9.jpg" alt="" id="backgroundImg">
-    </div>
     <section id="allSection">
         <div id="formSection">
             <img src="Image/second dot.png" alt="" id="secondImg">
             <p id="formHeader">Sign up for Flickr</p>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput" placeholder="">
                 <label for="floatingInput">First name</label>
             </div>
             <div class="form-floating mb-3">
@@ -181,15 +208,15 @@
                 <label for="floatingPassword">Last name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="text" class="form-control" id="floatingInput" placeholder="">
                 <label for="floatingInput">Your age</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput" placeholder="">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="password" class="form-control" id="floatingInput" placeholder="">
                 <label for="floatingInput">Password</label>
             </div>
             <button class="form-control text-light pt-2 pb-2 " id="button"><b>Next</b></button>
@@ -201,9 +228,11 @@
                     href="signin.html" id="termLinks">Log in here.</a></p>
         </div>
         <section class="d-flex">
-            <div class="dropdown2">
-                <button class="dropbtn2" onclick="toggleDropdown()">English <span class="dropdown-icon2">&#9660;</span></button>
-                <div class="dropdown-content2">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown1()">
+                  English<i class="fas fa-chevron-down" id="icon"></i>
+                </button>
+                <div id="dropdown-content" >
                   <a href="https://www.flickr.com/change_language.gne?lang=zh-hk&csrf=">繁體中文</a>
                   <a href="https://www.flickr.com/change_language.gne?lang=de-de&csrf=">Deutsch</a>
                   <a href="https://www.flickr.com/change_language.gne?lang=es-us&csrf=">Español</a>
@@ -214,13 +243,14 @@
                   <a href="https://www.flickr.com/change_language.gne?lang=vn-vn&csrf=">Tiếng Việt</a>
                   <a href="https://www.flickr.com/change_language.gne?lang=id-id&csrf=">Bahasa Indonesia</a>
                 </div>
-            </div>
+              </div>
             <div id="linkDiv">
                 <a href="https://www.flickr.com/help" id="links">Help</a><a href="https://www.flickr.com/help/privacy" id="links">Privacy</a><a href="https://www.flickr.com/help/terms" id="links">Terms</a>
             </div>
         </section>
     </section>
 
+    <script src="jseffect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

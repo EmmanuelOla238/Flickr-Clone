@@ -1,185 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    #formDiv{
-        width: 22rem;
-        height: 18rem;
-        background-color: white;
-        border-radius: 5px;
-        padding: 1em;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find your inspiration. | Flickr</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    #formDiv {
+      width: 22rem;
+      height: 18rem;
+      background-color: white;
+      border-radius: 5px;
+      padding: 1em;
     }
-    header{
-        width: 100%;
-        background-color: black;
-        padding: 0.8em;
+    header {
+      width: 100%;
+      background-color: black;
+      padding: 0.8em;
     }
-    #SigninHeaderImg{
-        width: 7%;
-        height: 8%;
-        margin-left: 9%;
+    #SigninHeaderImg {
+      width: 7%;
+      height: 8%;
+      margin-left: 9%;
     }
-    #formSection{
-        position: absolute;
-        top: 28%;
-        left: 37%;
+    #formSection {
+      margin: 24vh 0 0 78vh;
     }
-    #backgroundImg{
-        width: 100%;
-        height: 92.3vh;
+    #secondImg {
+      margin-left: 45%;
     }
-    #secondImg{
-        margin-left: 45%;
+    #login {
+      font-size: 1.2em;
+      margin-left: 30%;
+      margin-top: 0.5em;
     }
-    #login{
-        font-size: 1.2em;
-        margin-left: 30%;
-        margin-top: 0.5em
+    #input {
+      border: 0.5px black solid;
+      border-style: groove;
+      padding: 1em;
+      height: 3.5em;
+      background-color: white;
+      margin-bottom: 1.8em;
+      width: 100%;
     }
-    #input{
-        border: 0.5px black solid;
-        border-style: groove;
-        padding: 1em;
-        height: 3.5em;
-        background-color: white;
-        margin-bottom: 1.8em;
-        width: 100%;
+    #input::placeholder {
+      font-size: 1em;
     }
-    #input::placeholder{
-        font-size: 1em;
+    #button {
+      width: 100%;
+      background-color: #128fdc;
     }
-    #button{
-        width: 100%;
-        background-color: #128fdc;
+    #button:hover {
+      background-color: #309cdf;
     }
-    #button:hover{
-        background-color: #309cdf;
+    #SignUpText {
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 1.5em;
     }
-    #SignUpText{
-        font-size: 0.9em;
-        text-align: center;
-        margin-top: 1.5em;
-    }
-    
-.dropdown2 {
-    position: relative;
-    display: inline-block;
-    z-index: 3;
-}
 
-.dropbtn2 {
-    padding: 10px;
-    color: white;
-    font-size: 0.9em;
-    border: none;
-    cursor: pointer;
-    background: none;
-    padding-top: 1em;
-}
-
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-    bottom: 100%;
-    border-radius: 3px;
-    padding: 9px 0;
-}
-
-.dropdown-content2 a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    font-size: 0.9em;
-    margin-top: 2px;
-    padding-left: 10px;
-}
-
-#links{
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-    margin-right: 1.1em;
-    /* padding-top: 3em; */
-}
-#linkDiv{
-    padding-top: 0.7em;
-    margin-left: 6.6em;
-}
-@media screen and (max-width:478px) {
-    #backgroundImg{
-        display: none;
+    #links {
+      text-decoration: none;
+      font-size: 1em;
+      color: white;
+      margin-right: 1.1em;
+      /* padding-top: 3em; */
     }
-    #formSection{
+    #linkDiv {
+      padding-top: 0.7em;
+      margin-left: 6.6em;
+    }
+    body {
+      background: url(Image/033120190455-by-Henry.2edde7a9.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      padding: 10px;
+      color: white;
+      font-size: 0.9em;
+      border: none;
+      cursor: pointer;
+      background: none;
+      padding-top: 1em;
+    }
+
+    .dropbtn:hover {
+      color: white;
+    }
+
+    #dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      bottom: 100%;
+      border-radius: 3px;
+      padding: 9px 0;
+    }
+
+    #dropdown-content a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      font-size: 0.9em;
+      margin-top: 2px;
+      padding-left: 10px;
+    }
+
+    #dropdown-content a:hover {
+      background-color: rgb(196, 196, 196);
+    }
+
+    #icon {
+      margin-left: 5px;
+      font-size: 12px;
+      color: white;
+    }
+
+    @media screen and (max-width: 478px) {
+      body {
+        background: none;
+      }
+      #formSection {
         position: static;
         margin-left: 0.8em;
         margin-top: 0.5em;
-    }
-    #secondImg{
+      }
+      #secondImg {
         margin-left: 43%;
-    }
-    #SigninHeaderImg{
+      }
+      #SigninHeaderImg {
         width: 28%;
         height: 28%;
         margin-left: 2%;
-    }
-    #formDiv{
+      }
+      #formDiv {
         width: 100%;
         height: 18rem;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 3px;
         padding: 1em;
+      }
     }
-}
-</style>
-<body style="position: relative;">
+  </style>
+  <body style="position: relative">
     <header>
-        <a href="https://www.flickr.com/"><img src="Image/svgexport-2 (1).svg" alt="" id="SigninHeaderImg"></a>
+      <a href="https://www.flickr.com/"
+        ><img src="Image/svgexport-2 (1).svg" alt="" id="SigninHeaderImg"
+      /></a>
     </header>
-    <div>
-        <img src="Image/033120190455-by-Henry.2edde7a9.jpg" alt="" id="backgroundImg">
-    </div>
-    <section >
-        <div id="formSection">
-            <div id="formDiv" >
-            <img src="Image/second dot.png" alt="" id="secondImg">
-            <p id="login">Log in to Flickr</p>
-            <input type="text" id="input" placeholder="Email address">
-            <button class="form-control text-light pt-2 pb-2 " id="button" ><b>Next</b></button>
-            <p id="SignUpText">Not a Flickr member? <span><a href="signup.html" style="text-decoration: none;">Sign up here.</a></span></p>
-            </div>
-            <section class="d-flex">
-                <div class="dropdown2">
-                    <button class="dropbtn2" onclick="toggleDropdown()">English <span class="dropdown-icon2">&#9660;</span></button>
-                    <div class="dropdown-content2">
-                      <a href="https://www.flickr.com/change_language.gne?lang=zh-hk&csrf=">繁體中文</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=de-de&csrf=">Deutsch</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=es-us&csrf=">Español</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=fr-fr&csrf=">Français</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=ko-kr&csrf=">한글</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=it-it&csrf=">Italiano</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=pt-br&csrf=">Português</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=vn-vn&csrf=">Tiếng Việt</a>
-                      <a href="https://www.flickr.com/change_language.gne?lang=id-id&csrf=">Bahasa Indonesia</a>
-                    </div>
-                </div>
-                <div id="linkDiv">
-                    <a href="https://www.flickr.com/help" id="links">Help</a><a href="https://www.flickr.com/help/privacy" id="links">Privacy</a><a href="https://www.flickr.com/help/terms" id="links">Terms</a>
-                </div>
-            </section>
+    <section>
+      <div id="formSection">
+        <div id="formDiv">
+          <img src="Image/second dot.png" alt="" id="secondImg" />
+          <p id="login">Log in to Flickr</p>
+          <input type="text" id="input" placeholder="Email address" />
+          <button class="form-control text-light pt-2 pb-2" id="button">
+            <b>Next</b>
+          </button>
+          <p id="SignUpText">
+            Not a Flickr member?
+            <span
+              ><a href="signup.html" style="text-decoration: none"
+                >Sign up here.</a
+              ></span
+            >
+          </p>
         </div>
+        <section class="d-flex" id="footerDiv">
+          <div></div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown1()">
+              English<i class="fas fa-chevron-down" id="icon"></i>
+            </button>
+            <div id="dropdown-content">
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=zh-hk&csrf="
+                >繁體中文</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=de-de&csrf="
+                >Deutsch</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=es-us&csrf="
+                >Español</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=fr-fr&csrf="
+                >Français</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=ko-kr&csrf="
+                >한글</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=it-it&csrf="
+                >Italiano</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=pt-br&csrf="
+                >Português</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=vn-vn&csrf="
+                >Tiếng Việt</a
+              >
+              <a
+                href="https://www.flickr.com/change_language.gne?lang=id-id&csrf="
+                >Bahasa Indonesia</a
+              >
+            </div>
+          </div>
+          <div id="linkDiv">
+            <a href="https://www.flickr.com/help" id="links">Help</a
+            ><a href="https://www.flickr.com/help/privacy" id="links">Privacy</a
+            ><a href="https://www.flickr.com/help/terms" id="links">Terms</a>
+          </div>
+        </section>
+      </div>
     </section>
-    
-    <script src="jseffect.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+
+    <script>
+      function toggleDropdown1() {
+        var theElement = document.getElementById("dropdown-content");
+
+        if ((theElement.style.display = "none")) {
+          theElement.style.display = "block";
+        }
+
+        window.onclick = function (event) {
+          if (!event.target.matches(".dropbtn")) {
+            theElement.style.display = "none";
+          }
+        };
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -130,20 +130,21 @@
 
 #footerLinks{
     text-decoration: none;
-    color: #979797;
+    color: #a19999;
     font-size: 0.85em;
     font-weight: 500;
     padding-top: 1em;
+    opacity: 0.;
 }
 
 .SmFootertext{
-    color: #979797;
+    color: #aca4a4;
     font-size: 0.85em;
     display: none;
 }
 
 #footerLinks:hover{
-    color: white;
+    color: rgb(230, 221, 221);
 }
 
 .dropdown {
@@ -165,7 +166,7 @@
     color: white;
 }
 
-.dropdown-content {
+#dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -177,7 +178,7 @@
     padding: 9px 0;
 }
 
-.dropdown-content a {
+#dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
@@ -186,12 +187,13 @@
     padding-left: 10px;
 }
 
-.dropdown-content a:hover{
+#dropdown-content a:hover{
     background-color: rgb(196, 196, 196)
 }
 
-.dropdown.active .dropdown-content {
-    display: block;
+#icon{
+    margin-left: 5px;
+    font-size: 12px;
 }
 
 #footerIcon{
@@ -201,7 +203,7 @@
 }
 
 #footerIcon:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #mistDiv{
